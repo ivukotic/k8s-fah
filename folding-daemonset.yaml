@@ -20,7 +20,7 @@ spec:
       #   effect: NoSchedule
       containers:
       - name: fah
-        image: "richstokes20/fah-covid:latest"
+        image: "ivukotic/folding-at-home:latest"
         imagePullPolicy: Always
         resources:
           limits:
