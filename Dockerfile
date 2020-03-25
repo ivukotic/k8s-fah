@@ -18,14 +18,12 @@ RUN apt-get update && \
   apt-get autoremove -y && \
   apt install ocl-icd-opencl-dev -y
 
-# EXPOSE 7396 36396
-
 ADD config.xml /etc/fahclient/config.xml
 
 WORKDIR /var/lib/fahclient
 CMD	["/usr/bin/FAHClient", \
-	"--config", "/etc/fahclient/config.xml", \
-	"--config-rotate=false", \
-	"--gpu=true", \
-	# "--run-as", "fahclient", \
-	"--pid-file=/var/run/fahclient.pid"]
+  "--config", "/etc/fahclient/config.xml", \
+  "--config-rotate=false", \
+  "--gpu=true", \
+  # "--run-as", "fahclient", \
+  "--pid-file=/var/run/fahclient.pid"]
