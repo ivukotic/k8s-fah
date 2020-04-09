@@ -2,7 +2,7 @@
 
   <!-- User Information -->
   <user value="maniaclab"/>         <!-- Enter your user name here -->
-  <team value="2247"/>         <!-- Your team number -->
+  <team value="38188"/>         <!-- Your team number -->
   <passkey value="1afa40f09504ec3f1afa40f09504ec3f"/>      <!-- 32 hexadecimal characters if provided -->
 
   <power value="full"/>    <!-- Throttling this at K8s level -->

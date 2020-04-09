@@ -19,27 +19,17 @@ spec:
       labels:
         app: fah-gpu-cpu
     spec:
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-          - labelSelector:
-              matchExpressions:
-              - key: app
-                operator: In
-                values:
-                - fah-gpu-cpu
-            topologyKey: "kubernetes.io/hostname"
       containers:
       - name: fah-gpu-cpu
         image: "ivukotic/folding-at-home:latest"
         imagePullPolicy: Always
         resources:
           limits:
-            cpu: 1000m # How much CPU you wish to donate per node
-            memory: 2Gi
+            cpu: 16000m # How much CPU you wish to donate per node
+            memory: 32Gi
             nvidia.com/gpu: "1"
           requests:
-            cpu: 100m
-            memory: 256Mi
+            cpu: 4000m
+            memory: 2Gi
             nvidia.com/gpu: "1"
       priorityClassName: low-priority
