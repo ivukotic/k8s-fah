@@ -1,7 +1,7 @@
 <config>
 
   <!-- User Information -->
-  <user value="maniaclab"/>         <!-- Enter your user name here -->
+  <user value="UC_ATLAS-ML"/>         <!-- Enter your user name here -->
   <team value="38188"/>         <!-- Your team number -->
   <passkey value="1afa40f09504ec3f1afa40f09504ec3f"/>      <!-- 32 hexadecimal characters if provided -->
 
